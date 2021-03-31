@@ -114,7 +114,7 @@ void Rinst(char* inst){
 
     }
     else if (!strncmp(inst+26,"000011",6)){
-        printf(" sra $%d, $%d, $%d", rd,rt,sa);
+        printf(" sra $%d, $%d, %d", rd,rt,sa);
 
     }
     else if (!strncmp(inst+26,"000111",6)){
@@ -122,7 +122,7 @@ void Rinst(char* inst){
 
     }
     else if (!strncmp(inst+26,"000010",6)){
-        printf(" srl $%d, $%d, $%d", rd,rt,sa);
+        printf(" srl $%d, $%d, %d", rd,rt,sa);
 
     }
     else if (!strncmp(inst+26,"000110",6)){
@@ -145,7 +145,6 @@ void Rinst(char* inst){
         printf(" xor $%d, $%d, $%d", rd,rs,rt);
 
     }
-
     else{
         printf("unknown instruction");
     }
@@ -155,7 +154,82 @@ void Iinst(char* inst){
     int rs=uint(inst+6,5);
     int rt=uint(inst+11,5);
     int immediate=sint(inst+16, 16);
-    
+
+    if (!strncmp(inst,"001000",6)){
+        printf(" addi $%d, $%d, %d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"001001",6)){
+        printf(" addiu $%d, $%d, %d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"001100",6)){
+        printf(" andi $%d, $%d, %d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"000100",6)){
+        printf(" @@@beqbeq $%d, $%d, %d",rs,rt,immediate);
+
+    }
+    else if (!strncmp(inst,"000101",6)){
+        printf(" @@@bne $%d, $%d, %d",rs,rt,immediate);
+
+    }
+    else if (!strncmp(inst,"100000",6)){
+        printf(" lb $%d, %d($%d)",rt, immediate, rs);
+
+    }
+    else if (!strncmp(inst,"100100",6)){
+        printf(" lbu $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"100001",6)){
+        printf(" lh $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"100101",6)){
+        printf(" lhu $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"001111",6)){
+        printf(" lui $%d, %d",rt,immediate);
+
+    }
+    else if (!strncmp(inst,"100011",6)){
+        printf(" lw $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"001101",6)){
+        printf(" ori $%d, $%d, %d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"101000",6)){
+        printf(" sb $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"001010",6)){
+        printf(" slti $%d, $%d, $%d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"001011",6)){
+        printf(" sltiu $%d, $%d, $%d",rt,rs,immediate);
+
+    }
+    else if (!strncmp(inst,"101001",6)){
+        printf(" sh $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"101011",6)){
+        printf(" sw $%d, %d($%d)",rt,immediate,rs);
+
+    }
+    else if (!strncmp(inst,"001110",6)){
+        printf(" xori $%d, $%d, $%d",rt,rs,immediate);
+
+    }
+    else {
+        printf("unknown instruction");
+    }
 }
 
 void Jinst(char* inst){
