@@ -15,20 +15,52 @@ int uint(char* inst, int n){
     return sum;
 }
 
-void Rinst(char* inst){
-
+int sint(char* inst, int n){
+    int sum=0;
+    if (inst[0]==48){
+        for (int i=0;i<n; i++){
+            sum+=(inst[i]-48)*(1<<(n-1-i));
+        }
+    }
+    else{
+        for (int i=1;i<n; i++){
+            sum+=(inst[i]-48)*(1<<(n-1-i));
+        }
+        sum=sum-(1<<(n-1));
+    }
+    return sum;
 }
+
+void Rinst(char* inst){
+    int rs=uint(inst+6,5);
+    int rt=uint(inst+11,5);
+    int rd=uint(inst+16,5);
+    int sa=uint(inst+21,5);
+}
+
+void Iinst(char* inst){
+    int rs=uint(inst+6,5);
+    int rt=uint(inst+11,5);
+    int immediate=sint(inst+16, 16);
+    
+}
+
+void Jinst(char* inst){
+    int address=uint(inst+6,26);
+}
+
+
 
 
 void instruction(char* inst){
     if (!strncmp(inst,"000000",6)){
-        printf("\nR instruction");
+        Rinst(inst);
     }
     else if (!strncmp(inst,"00001",5)){
-        printf("\nJ instruction");
+        Jinst(inst);
     }
     else if (strncmp(inst,"0100",4)){
-        printf("\nI instruction");
+        Iinst(inst);
     }
     else{
         printf("unknown instruction");
@@ -71,16 +103,12 @@ int main(int argc, char**argv){
             }
         }
         else{
-            word.inst_num=2147483647-word.inst_num;
+            word.inst_num=2147483648-word.inst_num;
             for (int i=31; i>0; i--){
                 inst[i]=(word.inst_num%2==0)?'0':'1';
                 word.inst_num=word.inst_num/2;
             }
             inst[0]='1';
-        }
-
-        for (int i=0; i<6; i++){
-            printf("%c",inst[i]);
         }
         instruction(inst);
         n++;
