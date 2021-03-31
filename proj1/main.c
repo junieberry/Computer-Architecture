@@ -234,6 +234,17 @@ void Iinst(char* inst){
 
 void Jinst(char* inst){
     int address=uint(inst+6,26);
+    if (!strncmp(inst,"000010",6)){
+        printf(" j %d",address);
+
+    }
+    else if (!strncmp(inst,"000011",6)){
+        printf(" jal %d",address);
+
+    }
+    else{
+        printf("unknown instruction");
+    }
 }
 
 
@@ -281,7 +292,7 @@ int main(int argc, char**argv){
             word.inst_arr[i]=word.inst_arr[3-i];
             word.inst_arr[3-i]=temp;
         }
-        printf("\ninst %2d : %08x\n",n,word.inst_num);
+        printf("\ninst %2d : %08x ",n,word.inst_num);
         //2진수를 문자열로 저장
         if (word.inst_num>=0){
             for (int i=31; i>-1; i--){
