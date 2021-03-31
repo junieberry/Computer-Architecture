@@ -168,11 +168,11 @@ void Iinst(char* inst){
 
     }
     else if (!strncmp(inst,"000100",6)){
-        printf(" @@@beqbeq $%d, $%d, %d",rs,rt,immediate);
+        printf(" beq $%d, $%d, %d",rs,rt,immediate);
 
     }
     else if (!strncmp(inst,"000101",6)){
-        printf(" @@@bne $%d, $%d, %d",rs,rt,immediate);
+        printf(" bne $%d, $%d, %d",rs,rt,immediate);
 
     }
     else if (!strncmp(inst,"100000",6)){
@@ -208,11 +208,11 @@ void Iinst(char* inst){
 
     }
     else if (!strncmp(inst,"001010",6)){
-        printf(" slti $%d, $%d, $%d",rt,rs,immediate);
+        printf(" slti $%d, $%d, %d",rt,rs,immediate);
 
     }
     else if (!strncmp(inst,"001011",6)){
-        printf(" sltiu $%d, $%d, $%d",rt,rs,immediate);
+        printf(" sltiu $%d, $%d, %d",rt,rs,immediate);
 
     }
     else if (!strncmp(inst,"101001",6)){
@@ -224,7 +224,7 @@ void Iinst(char* inst){
 
     }
     else if (!strncmp(inst,"001110",6)){
-        printf(" xori $%d, $%d, $%d",rt,rs,immediate);
+        printf(" xori $%d, $%d, %d",rt,rs,immediate);
 
     }
     else {
