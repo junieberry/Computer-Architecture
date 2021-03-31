@@ -1,25 +1,16 @@
 #include <stdio.h>
+#include <string.h>
 
-typedef struct R{
-    unsigned int opcode:6;
-    unsigned int rs:5;
-    unsigned int rt:5;
-    unsigned int rd:5;
-    unsigned int shamt:5;
-    unsigned int funct:6;
-} R;
-
-typedef struct I{
-    unsigned int opcode:6;
-    unsigned int rs:5;
-    unsigned int rt:5;
-    unsigned int immediate:16;
-} I;
-
+int uint(char* inst, int n){
+    int sum=0;
+    for (int i=0;i<n; i++){
+        sum+=(inst[i]-48)*(1<<(n-1-i));
+    }
+    return sum;
+}
 
 int main(){
-    int a=4;
-    R r=(R)4;
-
-    printf("%d %d",r.opcode,r.funct);
+    char inst[]="1011";
+    printf("%d",uint(inst+1,2));
+    return 0;
 }
