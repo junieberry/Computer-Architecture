@@ -1,0 +1,35 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 42895
+
+[16:15:23] Extension host agent started.
+[16:15:23] [127.0.0.1][e3aa944d][ExtensionHostConnection] New connection established.
+[16:15:23] [127.0.0.1][04ee766b][ManagementConnection] New connection established.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+[16:15:24] [127.0.0.1][e3aa944d][ExtensionHostConnection] <27133> Launched Extension Host Process.
+[16:15:48] [127.0.0.1][04ee766b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[16:15:49] [127.0.0.1][e3aa944d][ExtensionHostConnection] <27133> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[16:15:49] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[16:15:58] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[16:15:58] Cancelling previous shutdown timeout
+[16:15:58] [127.0.0.1][b89490cd][ManagementConnection] New connection established.
+[16:15:58] [127.0.0.1][241ef38f][ExtensionHostConnection] New connection established.
+[16:15:58] [127.0.0.1][241ef38f][ExtensionHostConnection] <27787> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[16:20:58] New EH opened, aborting shutdown
+[17:35:38] [127.0.0.1][75226ee0][ManagementConnection] New connection established.
+[17:35:38] [127.0.0.1][4f4cbb6f][ExtensionHostConnection] New connection established.
+[17:35:38] [127.0.0.1][4f4cbb6f][ExtensionHostConnection] <29013> Launched Extension Host Process.
+[17:35:54] [127.0.0.1][75226ee0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[17:35:55] [127.0.0.1][4f4cbb6f][ExtensionHostConnection] <29013> Extension Host Process exited with code: 0, signal: null.
