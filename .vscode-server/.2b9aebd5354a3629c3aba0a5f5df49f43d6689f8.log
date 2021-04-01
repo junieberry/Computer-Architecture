@@ -33,3 +33,9 @@ New EH opened, aborting shutdown
 [17:35:38] [127.0.0.1][4f4cbb6f][ExtensionHostConnection] <29013> Launched Extension Host Process.
 [17:35:54] [127.0.0.1][75226ee0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
 [17:35:55] [127.0.0.1][4f4cbb6f][ExtensionHostConnection] <29013> Extension Host Process exited with code: 0, signal: null.
+[06:38:42] [127.0.0.1][b89490cd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[06:38:43] [127.0.0.1][241ef38f][ExtensionHostConnection] <27787> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[06:38:43] Last EH closed, waiting before shutting down
+Last EH closed, shutting down
+[06:43:43] Last EH closed, shutting down

@@ -1,0 +1,24 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 45649
+
+[20:54:48] Extension host agent started.
+[20:54:49] [127.0.0.1][98656ec7][ExtensionHostConnection] New connection established.
+[20:54:49] [127.0.0.1][2b9acd6e][ManagementConnection] New connection established.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
+[20:54:49] [127.0.0.1][98656ec7][ExtensionHostConnection] <23670> Launched Extension Host Process.
+[20:54:52] Installing extension: ms-ceintl.vscode-language-pack-ko
+[20:54:52] Downloaded extension: ms-ceintl.vscode-language-pack-ko undefined
+[20:54:52] Extracted extension to /home/2019312326/.vscode-server/extensions/.a71eea45-3e48-4850-886a-b520cd33a7bf: ms-ceintl.vscode-language-pack-ko
+[20:54:52] Renamed to /home/2019312326/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.55.2
+[20:54:52] Installation completed. ms-ceintl.vscode-language-pack-ko
+[20:54:52] Extensions installed successfully: ms-ceintl.vscode-language-pack-ko

@@ -284,7 +284,7 @@ int main(int argc, char**argv){
 
     while(!feof(fp)){
         //instruction 하나만큼 읽어오기
-        fread((Word*)&word, sizeof(word), 1, fp);
+        if(fread((Word*)&word, sizeof(word), 1, fp)==0)break;
         
          // little endian을 Big endian으로 바꿔주기
         for (i=0; i<2; i++){
