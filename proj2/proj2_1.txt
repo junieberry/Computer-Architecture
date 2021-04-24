@@ -1,0 +1,10 @@
+inst 0: 20021234 addi $2, $0, 4660
+inst 1: 3c038765 lui $3, -30875
+inst 2: 34634321 ori $3, $3, 17185
+inst 3: 2004ffff addi $4, $0, -1
+inst 4: 3065ffff andi $5, $3, -1
+inst 5: 2086fffc addi $6, $4, -4
+inst 6: 00063c00 sll $7, $6, 16
+inst 7: 00074202 srl $8, $7, 8
+inst 8: 0105482a slt $9, $8, $5
+inst 9: 28aa7fff slti $10, $5, 32767

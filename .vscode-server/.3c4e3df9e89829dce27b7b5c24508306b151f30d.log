@@ -1,0 +1,42 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 34311
+
+[05:42:19] Extension host agent started.
+[05:42:19] [127.0.0.1][d442166f][ExtensionHostConnection] New connection established.
+[05:42:19] [127.0.0.1][4106e46d][ManagementConnection] New connection established.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
+[05:42:19] [127.0.0.1][d442166f][ExtensionHostConnection] <11126> Launched Extension Host Process.
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/2008312579/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/2008312579/'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/2008312579/'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/2008312579/'
+}
+[05:55:56] [127.0.0.1][4106e46d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[05:55:58] [127.0.0.1][d442166f][ExtensionHostConnection] <11126> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[05:55:58] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[05:56:21] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[05:56:21] Cancelling previous shutdown timeout
+[05:56:21] [127.0.0.1][8e72fbc4][ManagementConnection] New connection established.
+[05:56:21] [127.0.0.1][81684a2b][ExtensionHostConnection] New connection established.
+[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
+[05:56:21] [127.0.0.1][81684a2b][ExtensionHostConnection] <17090> Launched Extension Host Process.

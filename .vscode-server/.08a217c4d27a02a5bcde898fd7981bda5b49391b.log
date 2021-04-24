@@ -1,0 +1,66 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 44851
+
+[22:33:47] Extension host agent started.
+[22:33:47] [127.0.0.1][9e061726][ManagementConnection] New connection established.
+[22:33:47] [127.0.0.1][a3b617cc][ExtensionHostConnection] New connection established.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
+[22:33:47] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode'
+[22:33:47] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/settings.json'
+[22:33:48] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/tasks.json'
+[22:33:48] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/launch.json'
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/swe3005/2021s/proj1'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/swe3005/2021s/proj1'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/swe3005/2021s/proj1'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/swe3005/2021s/proj1'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/swe3005/2021s/proj1'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/swe3005/2021s/proj1'
+}
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/swe3005/2021s/proj1'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/swe3005/2021s/proj1'
+}
+[22:33:48] [127.0.0.1][a3b617cc][ExtensionHostConnection] <21952> Launched Extension Host Process.
+[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/swe3005/2021s/proj1'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/home/swe3005/2021s/proj1'
+}
+EXTHOST-LOG:::::
+["spawn /home/2019312326/.vscode-server/bin/08a217c4d27a02a5bcde898fd7981bda5b49391b/node_modules/vscode-ripgrep/bin/rg EACCES"]
+[22:34:15] [127.0.0.1][98e65bd3][ManagementConnection] New connection established.
+[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
+[22:34:15] [127.0.0.1][c437bf8a][ExtensionHostConnection] New connection established.
+[22:34:15] [127.0.0.1][c437bf8a][ExtensionHostConnection] <22306> Launched Extension Host Process.
+[22:34:17] [127.0.0.1][9e061726][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[22:34:18] [127.0.0.1][a3b617cc][ExtensionHostConnection] <21952> Extension Host Process exited with code: 0, signal: null.
+[22:36:36] [127.0.0.1][98e65bd3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[22:36:37] [127.0.0.1][c437bf8a][ExtensionHostConnection] <22306> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[22:36:37] Last EH closed, waiting before shutting down
+Last EH closed, shutting down
+[22:41:37] Last EH closed, shutting down

@@ -617,3 +617,85 @@ git commit -m "details fixed
 "
 #1617226714
 git push -u origin
+#1617278126
+cd
+#1617278138
+make
+#1617278141
+cd
+#1617278142
+ls
+#1617278146
+cd proj1
+#1617278149
+make
+#1617278356
+mips-sim test1.bin
+#1617278406
+mips-sim test2.bin
+#1617278412
+make
+#1617278418
+cd proj1
+#1617278420
+make
+#1617278428
+ls
+#1617278436
+mips-sim test1.bin
+#1617278441
+mips-sim test2.bin
+#1617278452
+mips-sim test3.bin
+#1617278466
+make clean
+#1617278493
+cd ..
+#1617278495
+git add .
+#1617278510
+git commit -m "proj 1 finished"
+#1617278517
+git push -u origin
+#1617278719
+cd proj1
+#1617278722
+make clean
+#1617278724
+ls
+#1617278737
+cd ..
+#1617278737
+~swe3005/bin/submit project_id path_to_submit
+#1617278751
+~swe3005/bin/submit proj1 proj1
+#1617373532
+ls
+#1617373535
+cd proj1
+#1617373538
+submit
+#1617373547
+submit project1 FILE
+#1619297418
+cd
+#1619297420
+cd ..
+#1619297422
+ls
+#1619297515
+cd swe3005
+#1619297516
+ls
+#1619297520
+cd 2021s
+#1619297521
+ls
+#1619297531
+cd proj2
+#1619297532
+ls
+#1619297686
+cd ..
+#1619297699
+cp -r proj2 /home/2019312326/test

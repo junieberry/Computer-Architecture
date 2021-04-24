@@ -1,0 +1,19 @@
+inst 0: 3c031000 lui $3, 4096
+inst 1: 20840100 addi $4, $4, 256
+inst 2: 20a50200 addi $5, $5, 512
+inst 3: 20c60300 addi $6, $6, 768
+inst 4: 20e70400 addi $7, $7, 1024
+inst 5: ac640000 sw $4, 0($3)
+inst 6: ac650004 sw $5, 4($3)
+inst 7: ac660008 sw $6, 8($3)
+inst 8: ac67000c sw $7, 12($3)
+inst 9: 30080000 andi $8, $0, 0
+inst 10: 30090000 andi $9, $0, 0
+inst 11: 8c6a0000 lw $10, 0($3)
+inst 12: 00000000 sll $0, $0, 0
+inst 13: 012a4820 add $9, $9, $10
+inst 14: 20630004 addi $3, $3, 4
+inst 15: 21080001 addi $8, $8, 1
+inst 16: 290b0004 slti $11, $8, 4
+inst 17: 1560fff9 bne $11, $0, -7
+inst 18: 00000000 sll $0, $0, 0

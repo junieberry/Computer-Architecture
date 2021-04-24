@@ -18,3 +18,7 @@
 [2021-04-01 20:54:52.873] [remoteagent] [info] Renamed to /home/2019312326/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.55.2
 [2021-04-01 20:54:52.875] [remoteagent] [info] Installation completed. ms-ceintl.vscode-language-pack-ko
 [2021-04-01 20:54:52.906] [remoteagent] [info] Extensions installed successfully: ms-ceintl.vscode-language-pack-ko
+[2021-04-02 00:48:38.498] [remoteagent] [info] [127.0.0.1][2b9acd6e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-04-02 00:48:39.542] [remoteagent] [info] [127.0.0.1][98656ec7][ExtensionHostConnection] <23670> Extension Host Process exited with code: 0, signal: null.
+[2021-04-02 00:48:39.543] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-04-02 00:53:39.543] [remoteagent] [info] Last EH closed, shutting down
