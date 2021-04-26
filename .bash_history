@@ -699,3 +699,14 @@ ls
 cd ..
 #1619297699
 cp -r proj2 /home/2019312326/test
+#1619297859
+git status
+#1619297866
+git add .
+#1619297897
+git commit -m "[proj2] initial commit 
+README
+Test samples
+Makefile"
+#1619297918
+git push -u origin main

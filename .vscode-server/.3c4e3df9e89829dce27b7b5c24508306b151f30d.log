@@ -7,36 +7,22 @@
 * as described in the license https://aka.ms/vscode-remote/license
 *
 
-Extension host agent listening on 34311
+Extension host agent listening on 46193
 
-[05:42:19] Extension host agent started.
-[05:42:19] [127.0.0.1][d442166f][ExtensionHostConnection] New connection established.
-[05:42:19] [127.0.0.1][4106e46d][ManagementConnection] New connection established.
+[00:10:17] Extension host agent started.
+[00:10:17] [127.0.0.1][57fe75db][ExtensionHostConnection] New connection established.
+[00:10:17] [127.0.0.1][5c4cfa1a][ManagementConnection] New connection established.
 bash: cannot set terminal process group (-1): Inappropriate ioctl for device
 bash: no job control in this shell
 [IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
-[05:42:19] [127.0.0.1][d442166f][ExtensionHostConnection] <11126> Launched Extension Host Process.
-[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/2008312579/'] {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'scandir',
-  path: '/home/2008312579/'
-}
-[node.js fs] readdir with filetypes failed with error:  [Error: EACCES: permission denied, scandir '/home/2008312579/'] {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'scandir',
-  path: '/home/2008312579/'
-}
-[05:55:56] [127.0.0.1][4106e46d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
-[05:55:58] [127.0.0.1][d442166f][ExtensionHostConnection] <11126> Extension Host Process exited with code: 0, signal: null.
-Last EH closed, waiting before shutting down
-[05:55:58] Last EH closed, waiting before shutting down
-Got delay-shutdown request while in shutdown timeout, delaying
-[05:56:21] Got delay-shutdown request while in shutdown timeout, delaying
-Cancelling previous shutdown timeout
-[05:56:21] Cancelling previous shutdown timeout
-[05:56:21] [127.0.0.1][8e72fbc4][ManagementConnection] New connection established.
-[05:56:21] [127.0.0.1][81684a2b][ExtensionHostConnection] New connection established.
-[IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
-[05:56:21] [127.0.0.1][81684a2b][ExtensionHostConnection] <17090> Launched Extension Host Process.
+[00:10:18] [127.0.0.1][57fe75db][ExtensionHostConnection] <16798> Launched Extension Host Process.
+[05:36:38] [127.0.0.1][70dbc7f2][ManagementConnection] New connection established.
+[IPC Library: Pty Host]  INFO Listing 2 persistent terminals, 2 total terminals
+[05:36:38] [127.0.0.1][d3edbb69][ExtensionHostConnection] New connection established.
+[05:36:38] [127.0.0.1][d3edbb69][ExtensionHostConnection] <2682> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 48951 chars and 50 size events
+[IPC Library: Pty Host]  INFO Persistent process "9": Replaying 23120 chars and 29 size events
+[05:51:38] [127.0.0.1][5c4cfa1a][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
