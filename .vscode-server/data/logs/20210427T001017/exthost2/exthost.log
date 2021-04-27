@@ -14,3 +14,5 @@
 [2021-04-27 05:36:40.778] [exthost] [info] eager extensions activated
 [2021-04-27 05:36:40.861] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
 [2021-04-27 05:36:40.861] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/2019312326/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/extensions/ms-vscode.js-debug/src/extension.js
+[2021-04-27 06:47:28.976] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-04-27 06:47:29.993] [exthost] [info] exiting with code 0

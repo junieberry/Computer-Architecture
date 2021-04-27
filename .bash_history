@@ -710,3 +710,182 @@ Test samples
 Makefile"
 #1619297918
 git push -u origin main
+#1619450416
+make
+#1619450542
+cd proj2
+#1619450544
+make
+#1619450571
+.mips-sim
+#1619450576
+./mips-sim
+#1619450660
+make clean
+#1619450949
+cd
+#1619450952
+cd ..
+#1619450953
+ls
+#1619450962
+cd ~swe3005/2021s/proj2/mips-sim
+#1619456868
+cd
+#1619456871
+cd proj2
+#1619457473
+gcc -o main main.c
+#1619457485
+./main hihi hello nihao
+#1619457530
+gcc -o main main.c
+#1619457586
+./main hihi hello nihao
+#1619457601
+gcc -o main main.c
+#1619457602
+./main hihi hello nihao
+#1619457638
+gcc -o main main.c
+#1619457639
+./main hihi hello nihao
+#1619458177
+gcc -o main main.c
+#1619463374
+cd
+#1619463377
+cd proj1
+#1619463379
+make
+#1619463454
+./mips-sim proj2_1.bin
+#1619463502
+cd ../proj2
+#1619463683
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 1 reg
+#1619463688
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 2 reg
+#1619464581
+gcc -o main main.c
+#1619465865
+./main proj2_1.txt 1
+#1619465891
+gcc -o main main.c
+#1619465905
+./main proj2_1.txt 1
+#1619465913
+gcc -o main main.c
+#1619465914
+./main proj2_1.txt 1
+#1619465955
+gcc -o main main.c
+#1619465956
+./main proj2_1.txt 1
+#1619465993
+./main proj2_1.bin 1
+#1619466078
+gcc -o main main.c
+#1619466080
+./main proj2_1.bin 1
+#1619466106
+gcc -o main main.c
+#1619466107
+./main proj2_1.bin 1
+#1619466145
+gcc -o main main.c
+#1619466146
+./main proj2_1.bin 1
+#1619466168
+./main proj2_1.bin 1 hello
+#1619466826
+gcc -o main main.c
+#1619467066
+./main proj2_1.bin 1 hello
+#1619471994
+gcc -o temp temp.c
+#1619472136
+./temp
+#1619472158
+gcc -o temp temp.c
+#1619472191
+./temp
+#1619472201
+gcc -o temp temp.c
+#1619472203
+./temp
+#1619472222
+gcc -o temp temp.c
+#1619472224
+./temp
+#1619472417
+gcc -o temp temp.c
+#1619472426
+./temp
+#1619473481
+cd ..
+#1619473486
+git status
+#1619473490
+git add .
+#1619473504
+git commit -m "[proj2] instruction memory
+instruction memory load하는거까지 완료
+이제 instruction 하나하나 구현하고
+PC 관리해야함"
+#1619473558
+git push -u origin main
+#1619463487
+cd ..
+#1619463494
+cd proj1
+#1619463515
+./mips-sim proj2_1.bin
+#1619467422
+./mips-sim 1.bin
+#1619467426
+./mips-sim 2.bin
+#1619467436
+./mips-sim 3.bin
+#1619467459
+./mips-sim 4.bin
+#1619467479
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 1 reg
+#1619467491
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 1 reg
+#1619467495
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 2 reg
+#1619467502
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 3 reg
+#1619467505
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 4 reg
+#1619467508
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 8 reg
+#1619467512
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 12 reg
+#1619467525
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 9 reg
+#1619467532
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 16 reg
+#1619467546
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 20 reg
+#1619467550
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 24 reg
+#1619467553
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 28 reg
+#1619467559
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 30 reg
+#1619467562
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 31 reg
+#1619467568
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 32 reg
+#1619467687
+clear
+#1619467713
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 31 reg
+#1619467726
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/
+#1619467760
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 33 reg
+#1619471642
+mips-sim 1.bin

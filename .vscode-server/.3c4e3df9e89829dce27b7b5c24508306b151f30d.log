@@ -7,22 +7,12 @@
 * as described in the license https://aka.ms/vscode-remote/license
 *
 
-Extension host agent listening on 46193
+Extension host agent listening on 33725
 
-[00:10:17] Extension host agent started.
-[00:10:17] [127.0.0.1][57fe75db][ExtensionHostConnection] New connection established.
-[00:10:17] [127.0.0.1][5c4cfa1a][ManagementConnection] New connection established.
+[02:33:43] Extension host agent started.
+[02:33:43] [127.0.0.1][2eaa904c][ExtensionHostConnection] New connection established.
+[02:33:43] [127.0.0.1][f6de83a2][ManagementConnection] New connection established.
 bash: cannot set terminal process group (-1): Inappropriate ioctl for device
 bash: no job control in this shell
 [IPC Library: Pty Host]  INFO Listing 0 persistent terminals, 0 total terminals
-[00:10:18] [127.0.0.1][57fe75db][ExtensionHostConnection] <16798> Launched Extension Host Process.
-[05:36:38] [127.0.0.1][70dbc7f2][ManagementConnection] New connection established.
-[IPC Library: Pty Host]  INFO Listing 2 persistent terminals, 2 total terminals
-[05:36:38] [127.0.0.1][d3edbb69][ExtensionHostConnection] New connection established.
-[05:36:38] [127.0.0.1][d3edbb69][ExtensionHostConnection] <2682> Launched Extension Host Process.
-[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 48951 chars and 50 size events
-[IPC Library: Pty Host]  INFO Persistent process "9": Replaying 23120 chars and 29 size events
-[05:51:38] [127.0.0.1][5c4cfa1a][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
-Error: Unexpected SIGPIPE
-    at process.<anonymous> (/home/2019312326/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap.js:1:370)
-    at process.emit (events.js:315:20)
+[02:33:43] [127.0.0.1][2eaa904c][ExtensionHostConnection] <23685> Launched Extension Host Process.
