@@ -889,3 +889,190 @@ clear
 ~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 33 reg
 #1619471642
 mips-sim 1.bin
+#1619547368
+cd proj2
+#1619547376
+gcc -o main main.c
+#1619547818
+gcc -o temp temp.c
+#1619547821
+./temp
+#1619547924
+gcc -o temp temp.c
+#1619547933
+./temp
+#1619547953
+gcc -o temp temp.c
+#1619547954
+./temp
+#1619548232
+gcc -o main main.c
+#1619548447
+./main 1.bin 1
+#1619548550
+gcc -o main main.c
+#1619548551
+./main 1.bin 1
+#1619548585
+gcc -o main main.c
+#1619548586
+./main 1.bin 1
+#1619548758
+gcc -o main main.c
+#1619548759
+./main 1.bin 1
+#1619548844
+cd ..
+#1619548847
+git status
+#1619548850
+git add .
+#1619548933
+cd proj2
+#1619549641
+gcc -o main main.c
+#1619549643
+./main 1.bin 1
+#1619549882
+gcc -o main main.c
+#1619549884
+./main 1.bin 2
+#1619549980
+gcc -o main main.c
+#1619549981
+./main 1.bin 2
+#1619550101
+gcc -o main main.c
+#1619550104
+./main 1.bin 2
+#1619550106
+gcc -o main main.c
+#1619550108
+./main 1.bin 2
+#1619550252
+gcc -o temp temp.c
+#1619550254
+./temp
+#1619550376
+gcc -o main main.c
+#1619550379
+./main 1.bin 2
+#1619550428
+gcc -o main main.c
+#1619550429
+./main 1.bin 2
+#1619551109
+./main 3.bin 1
+#1619551560
+gcc -o main main.c
+#1619551568
+./main 1.bin 1
+#1619551582
+./main 1.bin 2
+#1619551602
+./main 1.bin 3
+#1619551616
+./main 1.bin 4
+#1619551628
+./main 1.bin 5
+#1619551698
+gcc -o main main.c
+#1619551702
+./main 1.bin 4
+#1619551711
+./main 1.bin 5
+#1619551810
+gcc -o main main.c
+#1619551811
+./main 1.bin 5
+#1619552218
+gcc -o main main.c
+#1619552219
+./main 1.bin 5
+#1619552258
+gcc -o main main.c
+#1619552259
+./main 1.bin 5
+#1619552280
+./main 1.bin 6
+#1619552297
+./main 1.bin 7
+#1619552317
+./main 1.bin 8
+#1619552427
+gcc -o main main.c
+#1619552429
+./main 1.bin 8
+#1619552444
+./main 1.bin 9
+#1619552465
+./main 1.bin 10
+#1619552563
+gcc -o main main.c
+#1619552565
+./main 1.bin 10
+#1619552578
+./main 1.bin 9
+#1619552603
+gcc -o main main.c
+#1619552606
+./main 1.bin 10
+#1619552627
+gcc -o main main.c
+#1619552628
+./main 1.bin 10
+#1619552640
+gcc -o main main.c
+#1619552641
+./main 1.bin 10
+#1619552667
+gcc -o main main.c
+#1619552668
+./main 1.bin 10
+#1619552689
+cd ..
+#1619552692
+git add .
+#1619552707
+git commit -m "[prog2] R 완료
+#1619552719
+git commit -m "[proj2] R 완료
+I instruction 중 memory instruction 처리해야함
+매개변수 받을때 두자리 수 받는거 처리해야함
+j instruction 처리해야함"
+#1619552776
+git push -u origin main
+#1619548018
+cd ../proj1
+#1619548024
+ls
+#1619548032
+./main 1.bin
+#1619548044
+mips-sim 1.bin
+#1619548608
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 1 reg
+#1619549989
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 2 reg
+#1619551067
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 2 reg[C
+#1619551575
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 1 reg
+#1619551591
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 2 reg
+#1619551597
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 3 reg
+#1619551610
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 4 reg
+#1619551624
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 5 reg
+#1619552271
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 6 reg
+#1619552289
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 7 reg
+#1619552306
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 8 reg
+#1619552439
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 9 reg
+#1619552461
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 10 reg
