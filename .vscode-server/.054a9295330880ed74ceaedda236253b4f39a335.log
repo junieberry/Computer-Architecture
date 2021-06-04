@@ -15,3 +15,37 @@ Extension host agent listening on 36345
 [17:31:50] [127.0.0.1][17ee49e9][ExtensionHostConnection] <30715> Launched Extension Host Process.
 [17:57:24] [127.0.0.1][58829dc4][ManagementConnection] The client has reconnected.
 [17:57:24] [127.0.0.1][17ee49e9][ExtensionHostConnection] The client has reconnected.
+[18:22:52] [127.0.0.1][58829dc4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[18:22:53] [127.0.0.1][17ee49e9][ExtensionHostConnection] <30715> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[18:22:53] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[18:23:04] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[18:23:04] Cancelling previous shutdown timeout
+[18:23:04] [127.0.0.1][79909b74][ManagementConnection] New connection established.
+[18:23:04] [127.0.0.1][d89435ee][ExtensionHostConnection] New connection established.
+[18:23:04] [127.0.0.1][d89435ee][ExtensionHostConnection] <24463> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 251805 chars and 4 size events
+New EH opened, aborting shutdown
+[18:28:04] New EH opened, aborting shutdown
+[18:39:00] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[18:39:03] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[18:39:03] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[18:39:30] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[18:40:59] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[18:40:59] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[18:57:59] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[18:58:07] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[19:02:45] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[19:03:03] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[19:03:03] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[19:03:14] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[19:29:18] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[19:29:18] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.

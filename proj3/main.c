@@ -41,7 +41,7 @@ typedef union Word{
 } Word;
 
 typedef struct block{
-    unsigned int V=0;
+    unsigned int V;
     unsigned int D;
     unsigned int Tag;
     int Data[16];
@@ -61,9 +61,36 @@ int Data[0x00010000/4];
 line Cache[8];
 
 int CacheLoad(int address){
-    int tag=0;
-    int index=0;
-    int block=0;
+    int tag=address>>9;
+    int index=(address>>6)%(1<<3);
+    int block=(address)%(1<<6);
+
+    printf("%x = tag : %x, index : %x, block : %x\n",address, tag, index, block/4);
+
+    //Cache Hit
+    for(int i=0;i<2;i++){
+        if ((Cache[index].set[i].Tag==tag)&(Cache[index].set[i].V==1)){
+            HIT++;
+            Cache[index].LRU=1-i;
+            return Cache[index].set[i].Data[block/4];
+        }
+    }
+
+    //Cache Miss
+    int LRU=Cache[index].LRU;
+    //Cache load
+    Cache[index].set[LRU].Tag=tag;
+    for (int i=0; i<16; i++){
+        Cache[index].set[LRU].Data[i]=Data[(address/4)/16+i];
+    }
+    
+    MISS++;
+    
+    Cache[index].set[LRU].V=1;
+    Cache[index].LRU=1-LRU;
+    
+    return Cache[index].set[LRU].Data[block/4];
+    
 }
 
 int Rinst(char* inst){
@@ -172,9 +199,15 @@ int Iinst(char* inst){
         // printf(" bne $%d, $%d, %d\n",rs,rt,immediate);
     }
 
+    else if (!strncmp(inst,"100011",6)){
+        Reg[rt]=CacheLoad(immediate+(Reg[rs]-0x10000000));
+        // printf(" lw $%d, %d($%d)\n",rt,immediate,rs);
+
+    }
+
     else if (!strncmp(inst,"100000",6)){
         Word word;
-        word.inst_num=Data[(immediate+(Reg[rs]-0x10000000))/4];
+        word.inst_num=CacheLoad(immediate+(Reg[rs]-0x10000000));
         char a=word.inst_arr[3-(immediate+(Reg[rs]-0x10000000)%4)];
 
         Reg[rt]=a;
@@ -184,7 +217,8 @@ int Iinst(char* inst){
     }
     else if (!strncmp(inst,"100100",6)){
         Word word;
-        word.inst_num=Data[(immediate+(Reg[rs]-0x10000000))/4];
+        // word.inst_num=Data[(immediate+(Reg[rs]-0x10000000))/4];
+        word.inst_num=CacheLoad(immediate+(Reg[rs]-0x10000000));
         unsigned char a=word.inst_arr[3-(immediate+(Reg[rs]-0x10000000)%4)];
         Reg[rt]=a;
 
@@ -194,7 +228,7 @@ int Iinst(char* inst){
     }
     else if (!strncmp(inst,"100001",6)){
         Word word;
-        word.inst_num=Data[(immediate+(Reg[rs]-0x10000000))/4];
+        word.inst_num=CacheLoad(immediate+(Reg[rs]-0x10000000));
         
         if(((immediate+(Reg[rs]-0x10000000))%4)==0){
             short temp=word.inst_num;
@@ -210,7 +244,7 @@ int Iinst(char* inst){
     }
     else if (!strncmp(inst,"100101",6)){
         Word word;
-        word.inst_num=Data[(immediate+(Reg[rs]-0x10000000))/4];
+        word.inst_num=CacheLoad(immediate+(Reg[rs]-0x10000000));
 
         if(((immediate+(Reg[rs]-0x10000000))%4)==0){
             Reg[rt]=(unsigned short)word.inst_num>>16;
@@ -226,11 +260,7 @@ int Iinst(char* inst){
         // printf(" lui $%d, %d\n",rt,immediate);
 
     }
-    else if (!strncmp(inst,"100011",6)){
-        Reg[rt]=Data[(immediate+(Reg[rs]-0x10000000))/4];
-        // printf(" lw $%d, %d($%d)\n",rt,immediate,rs);
-
-    }
+    
     else if (!strncmp(inst,"001101",6)){
         Reg[rt]=Reg[rs]|(unsigned short)immediate;
         // printf(" ori $%d, $%d, %d\n",rt,rs,immediate);
@@ -350,9 +380,6 @@ int main(int argc, char*argv[]){
     for (int i=0; i< 0x10000/4; i++){
         Inst[i]=0xFFFFFFFF;
         Data[i]=0xFFFFFFFF;
-    }
-    for (int i=0; i<8; i++){
-        Cache[i].
     }
 
 
