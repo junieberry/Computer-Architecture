@@ -199,7 +199,7 @@ int Rinst(char* inst){
 
     else if (!strncmp(inst+26,"001000",6)){
         PC=(Reg[rs]/4)-1;
-        // printf(" jr $%d",rs);
+        printf(" jr $%d",rs);
     }
 
     else{
@@ -327,12 +327,31 @@ int Iinst(char* inst){
         int address=(immediate+(Reg[rs]-0x10000000));
         Word word1;
         Word word2;
-        word1.inst_num=Data[address/4];
-        word2.inst_num=(unsigned short)Reg[rt];
-        word1.inst_arr[3-(address%4)/2]=word2.inst_arr[2];
-        word1.inst_arr[3-((address%4)/2)-1]=word2.inst_arr[3];
+        int tag=address>>9;
+        int index=(address>>6)%(1<<3);
+        int block=(address)%(1<<6);
 
-        CacheStore(immediate+(Reg[rs]-0x10000000),word1.inst_num);
+        for(int i=0;i<2;i++){
+        if ((Cache[index].set[i].Tag==tag)&(Cache[index].set[i].V==1)){
+            word1.inst_num=Cache[index].set[i].Data[block/4];
+             word2.inst_num=Reg[rt];
+
+            word1.inst_arr[address%4]=word2.inst_arr[address%4];
+            word1.inst_arr[address%4]=word2.inst_arr[address%4];
+            // printf("%x..\n\n",word1.inst_num);
+
+            CacheStore(address,word1.inst_num);
+            return 0;
+        }
+    }
+        word1.inst_num=Data[address/4];
+        word2.inst_num=Reg[rt];
+
+        word1.inst_arr[address%4]=word2.inst_arr[address%4];
+        word1.inst_arr[address%4]=word2.inst_arr[address%4];
+        // printf("%x..\n\n",word1.inst_num);
+
+        CacheStore(address,word1.inst_num);
         // Data[(immediate+(Reg[rs]-0x10000000))/4]=word1.inst_num;
 
         // printf(" sh $%d, %d($%d)\n",rt,immediate,rs);
@@ -340,12 +359,27 @@ int Iinst(char* inst){
     else if (!strncmp(inst,"101000",6)){
         int address=immediate+(Reg[rs]-0x10000000);
         Word word;
+        int tag=address>>9;
+        int index=(address>>6)%(1<<3);
+        int block=(address)%(1<<6);
+
+        for(int i=0;i<2;i++){
+        if ((Cache[index].set[i].Tag==tag)&(Cache[index].set[i].V==1)){
+            word.inst_num=Cache[index].set[i].Data[block/4];
+                
+            word.inst_arr[address%4]=Reg[rt];
+
+            CacheStore(immediate+(Reg[rs]-0x10000000),word.inst_num);   
+            return 0;
+        }}
+
         word.inst_num=Data[address/4];
-        word.inst_arr[3-(address%4)]=Reg[rt];
+        word.inst_arr[address%4]=Reg[rt];
 
         CacheStore(immediate+(Reg[rs]-0x10000000),word.inst_num);
         // Data[(immediate+(Reg[rs]-0x10000000))/4]=word.inst_num;
         // printf(" sb $%d, %d($%d)\n",rt,immediate,rs);
+        
     }
     else {
         return 1;
@@ -357,12 +391,12 @@ int Jinst(char* inst){
     int address=Uint(inst+6,26);
     if (!strncmp(inst,"000010",6)){
         PC=address;
-        // printf(" j %d\n",address);
+        printf(" j %d\n",address);
     }
     else if (!strncmp(inst,"000011",6)){
-        Reg[30]=PC+1;
+        Reg[31]=PC+1;
         PC=address;
-        // printf(" jal %d",address);
+        printf(" jal %d",address);
     }
     else{
         return 1;
@@ -398,9 +432,9 @@ void print_register(){
 }
 
 // 메모리 출력 함수
-void print_mem(unsigned int address){
-    for (int i=0; i<4; i++){
-        printf("0x%08x\n",Data[address/4+i]);
+void print_mem(unsigned int address, int num){
+    for (int i=0; i<num; i++){
+        printf("0x%08x\n",CacheLoad(address+i*4));
     }
 }
 
@@ -483,6 +517,8 @@ int main(int argc, char*argv[]){
     printf("Misses: %d\n",MISS);
     printf("Total: %d\n", HIT+MISS);
 
+
+
     if(!strncmp(argv[3],"reg",3)){
         print_register();  
     }
@@ -492,10 +528,18 @@ int main(int argc, char*argv[]){
         for(i=0; i<5; i++){
             // printf("%d = %d\n",ad[9-i]-48, 4*i);
             // printf("%x\n",(ad[9-i]-48)<<(4*i));
-            address+=(ad[9-i]-48)<<(4*i);
+            if(ad[9-i]<58){
+                address+=(ad[9-i]-48)<<(4*i);
+            }
+            else{
+                address+=(ad[9-i]-87)<<(4*i);
+            }
+            
         }
         if (ad[2]=='1'){
-            print_mem(address);
+            int num=atoi(argv[5]);
+            printf("%d\n",num);
+            print_mem(address,num);
         }
         else{
             print_instruction(address);

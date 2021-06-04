@@ -37,3 +37,149 @@ Open repository: /home/2019312326
 > git show --textconv :proj3/main.c
 > git ls-files --stage -- /home/2019312326/proj3/main.c
 > git cat-file -s c317c7e4d7bcce706d29ac6144185a2d03d189bb
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/main.c
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/main.c
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git symbolic-ref --short HEAD
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :proj3/main.c
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git check-ignore -v -z --stdin
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/2019312326/proj3/32.txt
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/32.txt
+> git ls-files --stage -- /home/2019312326/proj3/32.txt
+> git cat-file -s 1a1b13c84a410b4af9168cba0103193560ae13e1
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git show --textconv :proj3/33.txt
+> git ls-files --stage -- /home/2019312326/proj3/33.txt
+> git cat-file -s 35fa87ddc154292ef674be0bae4253c1ddf758ad
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :proj2/main.c
+> git ls-files --stage -- /home/2019312326/proj2/main.c
+> git cat-file -s 54f5370cb34ba83f3fe62c35238062d7ba1de7d9
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
+> git check-ignore -v -z --stdin
+> git show --textconv :proj1/main.c
+> git ls-files --stage -- /home/2019312326/proj1/main.c
+> git cat-file -s 851d753147a193f6643cb8db8c25114898455110
+> git show --textconv :proj3/main.c
+> git ls-files --stage -- /home/2019312326/proj3/main.c
+> git cat-file -s cc93cc6d8790edb8456e05a4154ba3b64c956076
