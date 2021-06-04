@@ -1,0 +1,7 @@
+[2021-05-30 05:10:09.076] [exthost] [info] extension host started
+[2021-05-30 05:10:09.291] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-05-30 05:10:09.291] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/debug-auto-launch/dist/extension
+[2021-05-30 05:10:09.298] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-05-30 05:10:09.298] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/git/dist/main
+[2021-05-30 05:10:10.237] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-05-30 05:10:11.238] [exthost] [info] exiting with code 0

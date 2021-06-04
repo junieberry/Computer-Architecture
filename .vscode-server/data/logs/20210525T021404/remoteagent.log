@@ -1,0 +1,25 @@
+[2021-05-25 02:14:04.883] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-05-25 02:14:04.883] [remoteagent] [info] Extension host agent started.
+[2021-05-25 02:14:05.014] [remoteagent] [info] [127.0.0.1][1aec8f5e][ExtensionHostConnection] New connection established.
+[2021-05-25 02:14:05.087] [remoteagent] [info] [127.0.0.1][245e4a33][ManagementConnection] New connection established.
+[2021-05-25 02:14:05.258] [remoteagent] [info] [127.0.0.1][1aec8f5e][ExtensionHostConnection] <10328> Launched Extension Host Process.
+[2021-05-25 02:14:09.008] [remoteagent] [info] Installing extension: ms-ceintl.vscode-language-pack-ko
+[2021-05-25 02:14:10.158] [remoteagent] [info] Downloaded extension: ms-ceintl.vscode-language-pack-ko /home/2019312326/.vscode-server/data/CachedExtensionVSIXs/ms-ceintl.vscode-language-pack-ko-1.56.2
+[2021-05-25 02:14:10.376] [remoteagent] [info] Extracted extension to /home/2019312326/.vscode-server/extensions/.9ffb9413-2d95-424d-897e-85a5cc678217: ms-ceintl.vscode-language-pack-ko
+[2021-05-25 02:14:10.451] [remoteagent] [info] Renamed to /home/2019312326/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.56.2
+[2021-05-25 02:14:10.456] [remoteagent] [info] Installation completed. ms-ceintl.vscode-language-pack-ko
+[2021-05-25 02:14:10.584] [remoteagent] [info] Extensions installed successfully: ms-ceintl.vscode-language-pack-ko
+[2021-05-25 04:22:40.232] [remoteagent] [info] [127.0.0.1][245e4a33][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-05-25 07:22:34.234] [remoteagent] [info] [127.0.0.1][1aec8f5e][ExtensionHostConnection] <10328> Extension Host Process exited with code: 0, signal: null.
+[2021-05-25 07:22:34.235] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-05-25 07:22:40.233] [remoteagent] [info] [127.0.0.1][245e4a33][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+[2021-05-25 07:27:34.236] [remoteagent] [info] Last EH closed, shutting down

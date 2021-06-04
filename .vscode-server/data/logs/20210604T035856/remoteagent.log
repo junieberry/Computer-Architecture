@@ -1,0 +1,31 @@
+[2021-06-04 03:58:57.004] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-06-04 03:58:57.004] [remoteagent] [info] Extension host agent started.
+[2021-06-04 03:58:57.233] [remoteagent] [info] [127.0.0.1][bc2df4df][ExtensionHostConnection] New connection established.
+[2021-06-04 03:58:57.256] [remoteagent] [info] [127.0.0.1][e9d40883][ManagementConnection] New connection established.
+[2021-06-04 03:58:57.311] [remoteagent] [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode'
+[2021-06-04 03:58:57.311] [remoteagent] [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/settings.json'
+[2021-06-04 03:58:57.312] [remoteagent] [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/tasks.json'
+[2021-06-04 03:58:57.312] [remoteagent] [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/home/swe3005/2021s/proj1/.vscode/launch.json'
+[2021-06-04 03:58:57.467] [remoteagent] [info] [127.0.0.1][bc2df4df][ExtensionHostConnection] <14234> Launched Extension Host Process.
+[2021-06-04 03:59:27.337] [remoteagent] [info] [127.0.0.1][e9d40883][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-06-04 03:59:28.363] [remoteagent] [info] [127.0.0.1][bc2df4df][ExtensionHostConnection] <14234> Extension Host Process exited with code: 0, signal: null.
+[2021-06-04 03:59:28.364] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-06-04 03:59:59.634] [remoteagent] [info] Got delay-shutdown request while in shutdown timeout, delaying
+[2021-06-04 03:59:59.634] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-06-04 03:59:59.735] [remoteagent] [info] [127.0.0.1][2f5f72af][ManagementConnection] New connection established.
+[2021-06-04 03:59:59.783] [remoteagent] [info] [127.0.0.1][d007cd51][ExtensionHostConnection] New connection established.
+[2021-06-04 03:59:59.797] [remoteagent] [info] [127.0.0.1][d007cd51][ExtensionHostConnection] <14847> Launched Extension Host Process.
+[2021-06-04 04:04:59.635] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-06-04 04:09:21.421] [remoteagent] [info] [127.0.0.1][2f5f72af][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-06-04 04:09:22.482] [remoteagent] [info] [127.0.0.1][d007cd51][ExtensionHostConnection] <14847> Extension Host Process exited with code: 0, signal: null.
+[2021-06-04 04:09:22.482] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-06-04 04:14:22.483] [remoteagent] [info] Last EH closed, shutting down

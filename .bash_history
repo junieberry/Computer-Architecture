@@ -1076,3 +1076,960 @@ mips-sim 1.bin
 ~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 9 reg
 #1619552461
 ~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 10 reg
+#1619755611
+cd proj2
+#1619755613
+ls
+#1619755634
+gcc -o main main.c
+#1619755810
+./main 1.bin 5
+#1619755826
+./main 1.bin 50
+#1619756160
+./main 2.bin 1
+#1619756188
+gcc -o main main.c
+#1619756199
+./main 2.bin 1
+#1619756207
+./main 2.bin 2
+#1619756373
+gcc -o main main.c
+#1619756376
+./main 2.bin 20
+#1619756380
+./main 2.bin 2
+#1619756420
+gcc -o main main.c
+#1619756525
+./main 1.bin 0
+#1619756933
+gcc -o temp temp.c
+#1619757007
+./temp
+#1619757105
+gcc -o main main.c
+#1619757130
+./main 1.bin 10
+#1619757245
+gcc -o temp temp.c
+#1619757257
+./temp 5
+#1619757299
+gcc -o main main.c
+#1619757303
+./main 1.bin 5
+#1619757326
+gcc -o main main.c
+#1619757328
+./main 1.bin 5
+#1619757335
+./main 1.bin
+#1619757370
+./main 1.bin 1 reg
+#1619757392
+gcc -o temp temp.c
+#1619757402
+./temp 1 2
+#1619757417
+gcc -o temp temp.c
+#1619757421
+gcc -o main main.c
+#1619757430
+./main 1.bin 4 reg
+#1619757442
+./main 1.bin 10 reg
+#1619757455
+./main 1.bin 10 re
+#1619757594
+./temp 1 0x1
+#1619757599
+./temp 1 0x3
+#1619757961
+./main 1.bin 10 reg
+#1619758002
+./main 1.bin 9 reg
+#1619758008
+./main 1.bin 10 reg
+#1619758119
+gcc -o main main.c
+#1619758133
+./main 1.bin 10 reg
+#1619758344
+gcc -o main main.c
+#1619758345
+./main 1.bin 10 reg
+#1619758390
+./main 2.bin 19 reg
+#1619758396
+./main 2.bin 1 reg
+#1619758403
+./main 2.bin 5 reg
+#1619758407
+./main 2.bin 10 reg
+#1619758410
+./main 2.bin 9 reg
+#1619758414
+./main 2.bin 7 reg
+#1619758416
+./main 2.bin 6 reg
+#1619758418
+./main 2.bin 5 reg
+#1619758731
+gcc -o main main.c
+#1619758734
+./main 2.bin 6 reg
+#1619758739
+./main 2.bin 19 reg
+#1619758799
+gcc -o main main.c
+#1619758800
+./main 2.bin 19 reg
+#1619758907
+gcc -o main main.c
+#1619758908
+./main 2.bin 19 reg
+#1619759036
+./main 2.bin 11 reg
+#1619759050
+./main 2.bin 12 reg
+#1619759064
+./main 2.bin 13 reg
+#1619759078
+./main 2.bin 14 reg
+#1619759093
+./main 2.bin 15 reg
+#1619759113
+./main 2.bin 16 reg
+#1619759119
+./main 2.bin 17 reg
+#1619759169
+./main 2.bin 18 reg
+#1619759181
+./main 2.bin 19 reg
+#1619759326
+./main 2.bin 18 reg
+#1619759336
+./main 2.bin 7 reg
+#1619759339
+./main 2.bin 15 reg
+#1619759343
+./main 2.bin 16 reg
+#1619759346
+./main 2.bin 18 reg
+#1619759371
+gcc -o main main.c
+#1619759372
+./main 2.bin 18 reg
+#1619759405
+gcc -o main main.c
+#1619759409
+./main 2.bin 17 reg
+#1619759421
+./main 2.bin 18 reg
+#1619759437
+./main 2.bin 17 reg
+#1619759440
+./main 2.bin 16 reg
+#1619759501
+gcc -o main main.c
+#1619759503
+./main 2.bin 18 reg
+#1619759511
+gcc -o main main.c
+#1619759514
+./main 2.bin 19 reg
+#1619773728
+gcc -o main main.c
+#1619774211
+./main 2.bin 18 reg
+#1619774254
+./main 3.bin 19 reg
+#1619774349
+./main 3.bin 3 mem 0x10000000
+#1619774452
+gcc -o main main.c
+#1619774453
+./main 3.bin 3 mem 0x10000000
+#1619774490
+gcc -o main main.c
+#1619774491
+./main 3.bin 3 mem 0x10000000
+#1619774527
+gcc -o main main.c
+#1619774528
+./main 3.bin 3 mem 0x10000000
+#1619774588
+gcc -o main main.c
+#1619774599
+./main 3.bin 3 mem 0x10000000
+#1619774623
+gcc -o main main.c
+#1619774626
+./main 3.bin 3 mem 0x10000000
+#1619774635
+gcc -o main main.c
+#1619774640
+./main 3.bin 3 mem 0x10000000
+#1619774661
+gcc -o main main.c
+#1619774670
+./main 3.bin 3 mem 0x10000000
+#1619774739
+gcc -o main main.c
+#1619774740
+./main 3.bin 3 mem 0x10000000
+#1619774755
+gcc -o main main.c
+#1619774756
+./main 3.bin 3 mem 0x10000000
+#1619774791
+gcc -o main main.c
+#1619774792
+./main 3.bin 3 mem 0x10000000
+#1619774813
+gcc -o main main.c
+#1619774814
+./main 3.bin 3 mem 0x10000000
+#1619774892
+gcc -o main main.c
+#1619774897
+./main 3.bin 3 mem 0x10000004
+#1619774906
+./main 3.bin 3 mem 0x12345678
+#1619774925
+./main 3.bin 3 mem 0x10000001
+#1619774927
+./main 3.bin 3 mem 0x10000002
+#1619774930
+./main 3.bin 3 mem 0x10000032
+#1619774949
+gcc -o main main.c
+#1619774955
+./main 3.bin 3 mem 0x10000000
+#1619775035
+gcc -o main main.c
+#1619775061
+./main 3.bin 3 mem 0x10000000
+#1619775071
+./main 3.bin 3 mem 0x11111111
+#1619775133
+gcc -o main main.c
+#1619775151
+./main 3.bin 3 mem 0x11111111
+#1619775198
+gcc -o main main.c
+#1619775199
+./main 3.bin 3 mem 0x11111111
+#1619775362
+gcc -o main main.c
+#1619775363
+
+#1619775419
+gcc -o main main.c
+#1619775422
+./main 3.bin 3 mem 0x11111111
+#1619775450
+gcc -o main main.c
+#1619775483
+./main 3.bin 3 mem 0x11111111
+#1619775492
+gcc -o main main.c
+#1619775493
+./main 3.bin 3 mem 0x11111111
+#1619775535
+gcc -o main main.c
+#1619775541
+./main 3.bin 3 mem 0x10000000
+#1619775555
+./main 3.bin 3 mem 0x10000004
+#1619775598
+gcc -o main main.c
+#1619775600
+./main 3.bin 3 mem 0x10000000
+#1619775691
+gcc -o main main.c
+#1619775692
+./main 3.bin 3 mem 0x10000000
+#1619775695
+gcc -o main main.c
+#1619775697
+./main 3.bin 3 mem 0x10000000
+#1619775749
+gcc -o main main.c
+#1619775750
+./main 3.bin 3 mem 0x10000000
+#1619775805
+gcc -o main main.c
+#1619775806
+./main 3.bin 3 mem 0x10000000
+#1619775894
+gcc -o temp temp.c
+#1619775896
+./temp
+#1619775963
+gcc -o main main.c
+#1619775966
+./main 3.bin 3 mem 0x10000000
+#1619776075
+./main 3.bin 19 reg
+#1619776103
+./main 3.bin 5 reg
+#1619776111
+./main 3.bin 6 reg
+#1619776189
+./main 3.bin 7 reg
+#1619776197
+./main 3.bin 8 reg
+#1619776227
+./main 3.bin 9 reg
+#1619776296
+gcc -o main main.c
+#1619776305
+./main 3.bin 6 reg
+#1619776342
+gcc -o main main.c
+#1619776342
+./main 3.bin 6 reg
+#1619776350
+./main 3.bin 7 reg
+#1619776378
+./main 3.bin 7 mem 0x10000000
+#1619776489
+./main 3.bin 7 reg
+#1619776493
+gcc -o main main.c
+#1619776495
+./main 3.bin 7 reg
+#1619776499
+./main 3.bin 8 reg
+#1619776503
+./main 3.bin 9 reg
+#1619776522
+./main 3.bin 19 reg
+#1619776566
+./main 3.bin 8 reg
+#1619776653
+gcc -o main main.c
+#1619776655
+./main 3.bin 8 reg
+#1619776659
+./main 3.bin 9 reg
+#1619776678
+gcc -o main main.c
+#1619776679
+./main 3.bin 9 reg
+#1619776719
+gcc -o main main.c
+#1619776720
+./main 3.bin 9 reg
+#1619776724
+./main 3.bin 10 reg
+#1619776734
+./main 3.bin 12 reg
+#1619776761
+./main 3.bin 12 mem 0x10000004
+#1619776853
+gcc -o main main.c
+#1619776863
+./main 3.bin 12 mem 0x10000004
+#1619776907
+gcc -o main main.c
+#1619776908
+./main 3.bin 12 mem 0x10000004
+#1619776930
+gcc -o main main.c
+#1619776931
+./main 3.bin 12 mem 0x10000004
+#1619777020
+gcc -o main main.c
+#1619777020
+./main 3.bin 12 mem 0x10000004
+#1619777030
+gcc -o main main.c
+#1619777031
+./main 3.bin 12 mem 0x10000004
+#1619777045
+gcc -o main main.c
+#1619777050
+./main 3.bin 12 mem 0x10000004
+#1619777063
+gcc -o main main.c
+#1619777064
+./main 3.bin 12 mem 0x10000004
+#1619777079
+./main 3.bin 13 reg
+#1619777089
+./main 3.bin 14 reg
+#1619777093
+./main 3.bin 15 reg
+#1619777107
+./main 3.bin 16 reg
+#1619777113
+./main 3.bin 17 reg
+#1619777123
+./main 3.bin 18 reg
+#1619777154
+./main 3.bin 18 mem 0x10000000
+#1619777246
+./main 3.bin 9 mem 0x10000000
+#1619777263
+./main 3.bin 10 mem 0x10000000
+#1619777275
+./main 3.bin 12 mem 0x10000000
+#1619777283
+./main 3.bin 14 mem 0x10000000
+#1619777297
+./main 3.bin 16 mem 0x10000000
+#1619777314
+./main 3.bin 15 mem 0x10000000
+#1619777336
+./main 3.bin 15 mem 0x10000004
+#1619777351
+./main 3.bin 15 reg
+#1619777562
+gcc -o main main.c
+#1619777591
+./main 3.bin 15 mem 0x10000004
+#1619777602
+./main 3.bin 16 mem 0x100000004
+#1619777618
+./main 3.bin 15 mem 0x100000004
+#1619777654
+./main 3.bin 16 mem 0x100000004
+#1619777844
+gcc -o main main.c
+#1619777845
+./main 3.bin 16 mem 0x100000004
+#1619777867
+gcc -o main main.c
+#1619777868
+./main 3.bin 16 mem 0x100000004
+#1619777887
+./main 3.bin 17 reg
+#1619778019
+gcc -o temp temp.c
+#1619778021
+./temp
+#1619778036
+gcc -o temp temp.c
+#1619778036
+./temp
+#1619778046
+gcc -o temp temp.c
+#1619778046
+./temp
+#1619778058
+gcc -o temp temp.c
+#1619778058
+./temp
+#1619778076
+gcc -o main main.c
+#1619778081
+./main 3.bin 17 reg
+#1619778138
+gcc -o main main.c
+#1619778141
+./main 3.bin 19 reg
+#1619778220
+./main 3.bin 18 mem 0x10000000
+#1619778919
+./main 3.bin 6 mem 0x10000000
+#1619778925
+./main 3.bin 6 reg
+#1619778991
+gcc -o main main.c
+#1619778993
+./main 3.bin 6 reg
+#1619778999
+./main 3.bin 18 reg
+#1619779007
+./main 3.bin 17 reg
+#1619779037
+./main 3.bin 19 reg
+#1619779048
+./main 3.bin 19 mem 0x10000000
+#1619779068
+gcc -o main main.c
+#1619779069
+./main 3.bin 19 mem 0x10000000
+#1619779259
+gcc -o main main.c
+#1619779260
+./main 3.bin 19 mem 0x10000000
+#1619779452
+gcc -o main main.c
+#1619779453
+./main 3.bin 19 mem 0x10000000
+#1619779461
+./main 3.bin 19 reg
+#1619779914
+gcc -o main main.c
+#1619779915
+./main 3.bin 19 reg
+#1619779999
+gcc -o main main.c
+#1619780076
+./main 3.bin 19 reg
+#1619780188
+gcc -o main main.c
+#1619780189
+./main 3.bin 19 reg
+#1619780217
+./main 4.bin 30 reg
+#1619780272
+./main 4.bin 19 reg
+#1619780296
+./main 4.bin 20 reg
+#1619780477
+./main 4.bin 20 mem 0x10000000
+#1619780503
+./main 4.bin 1 reg
+#1619780519
+./main 4.bin 10 reg
+#1619780558
+./main 4.bin 11 mem 0x10000000
+#1619780571
+./main 4.bin 12 mem 0x10000000
+#1619780596
+gcc -o main main.c
+#1619780599
+./main 4.bin 12 mem 0x10000000
+#1619780614
+./main 4.bin 14 mem 0x10000000
+#1619780627
+./main 4.bin 19 reg
+#1619780643
+./main 4.bin 20 reg
+#1619780678
+./main 4.bin 23 reg
+#1619780722
+./main 4.bin 24 reg
+#1619780749
+./main 4.bin 25 mem 0x10000000
+#1619780779
+./main 4.bin 30 reg
+#1619782728
+./main 4.bin 31 reg
+#1619782758
+./main 4.bin 32 reg
+#1619782867
+gcc -o main main.c
+#1619782881
+./main 4.bin 32 reg
+#1619782888
+./main 4.bin 33 reg
+#1619782920
+./main 4.bin 40 reg
+#1619782936
+cd ..
+#1619782939
+git add .
+#1619782962
+git commit -m "[Proj2] semi-finished
+I instruction 완료
+J instruction 완료
+mem, inst print 함수 완료"
+#1619782996
+git push -u origin main
+#1619783661
+ls
+#1619783663
+cd proj2
+#1619783667
+make
+#1619783711
+
+#1619783715
+./mips-sim 1.bin
+#1619783743
+./mips-sim 1.bin 11 reg
+#1619783748
+./mips-sim 1.bin 10 reg
+#1619783752
+./mips-sim 1.bin 10 reg > 11.txt
+#1619783785
+diff 11.txt 111.txt
+#1619783810
+diff -s 11.txt 111.txt
+#1619783837
+./mips-sim 2.bin 19 reg > 22.txt
+#1619783883
+diff -s 22.txt 222.txt
+#1619783902
+./mips-sim 3.bin 19 reg > 33.txt
+#1619783926
+diff -s 33.txt 333.txt
+#1619783943
+./mips-sim 3.bin 19 reg
+#1619783955
+./mips-sim 2.bin 19 reg
+#1619783967
+./mips-sim 3.bin 1 reg
+#1619783970
+./mips-sim 3.bin 17 reg
+#1619783974
+./mips-sim 3.bin 14 reg
+#1619783977
+./mips-sim 3.bin 15 reg
+#1619783980
+./mips-sim 3.bin 16 reg
+#1619784037
+./mips-sim 3.bin 19 reg >33.txt
+#1619784044
+diff -s 33.txt 333.txt
+#1619784055
+./mips-sim 3.bin 19 reg >33.txt
+#1619784057
+diff -s 33.txt 333.txt
+#1619784101
+./mips-sim 3.bin 19 reg
+#1619784283
+./mips-sim 3.bin 19 mem 0x00000000
+#1619784513
+./mips-sim 2.bin 19 reg
+#1619784522
+./mips-sim 2.bin 19 mem 0x00000000
+#1619784604
+./mips-sim 3.bin 19 mem 0x00000000
+#1619784613
+./mips-sim 3.bin 18 mem 0x00000000
+#1619784618
+./mips-sim 3.bin 16 mem 0x00000000
+#1619784621
+./mips-sim 3.bin 15 mem 0x00000000
+#1619784920
+./mips-sim 4.bin > 44.txt
+#1619784948
+./mips-sim 4.bin 59 reg > 44.txt
+#1619784972
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 59 reg >444.txt
+#1619784978
+diff -s 44.txt 444.t
+#1619785068
+./mips-sim 4.bin 906 reg
+#1619785097
+./mips-sim 4.bin 15 mem 0x10000000
+#1619785104
+./mips-sim 4.bin 15 mem 0x10000010
+#1619785117
+./mips-sim 4.bin 905 mem 0x10000000
+#1619785122
+./mips-sim 4.bin 905 mem 0x10000010
+#1619785330
+./mips-sim 3.bin 16 mem 0x00000000
+#1619785336
+./mips-sim 3.bin 16 reg
+#1619785489
+make clean
+#1619785490
+make
+#1619785502
+./mips-sim 3.bin 16 reg
+#1619785512
+gcc -o main main.c
+#1619785521
+./main 3.bin 16 reg
+#1619785524
+./main 3.bin 17 reg
+#1619785529
+gcc -o main main.c
+#1619785531
+./main 3.bin 16 reg
+#1619785538
+gcc -o main main.c
+#1619785540
+./main 3.bin 17 reg
+#1619785552
+./mips-sim 3.bin 16 reg
+#1619785557
+make clean
+#1619785558
+make
+#1619785560
+./mips-sim 3.bin 16 reg
+#1619785632
+cd project_2
+#1619785641
+make
+#1619785642
+ls
+#1619785645
+make clean
+#1619785650
+ls
+#1619785656
+~swe3005/bin/submit proj2 project_2
+#1619785664
+~swe3005/bin/check-submission proj2
+#1619785691
+~swe3005/bin/check-submission proj1
+#1619785718
+cd ..
+#1619785722
+git add .
+#1619785739
+git commit -m "[Proj2] finished!"
+#1619785745
+git push -u origin main
+#1619757987
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 9 reg
+#1619758017
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_1.bin 10 reg
+#1619758383
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 19 reg
+#1619758637
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 5 reg
+#1619758969
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 5' reg
+#1619758975
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 19 reg
+#1619759041
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 11 reg
+#1619759055
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 12 reg
+#1619759072
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 13 reg
+#1619759083
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 14 reg
+#1619759100
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 15 reg
+#1619759106
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 16 reg
+#1619759163
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 17 reg
+#1619759174
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 18 reg
+#1619759208
+cd ../proj1
+#1619759217
+./mips-sim 2.bin
+#1619759389
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 18 reg
+#1619759417
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 17 reg
+#1619759425
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 18 reg
+#1619759433
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 17 reg
+#1619759507
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 18 reg
+#1619759518
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 19 reg
+#1619762788
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 20 reg
+#1619762791
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 21 reg
+#1619774224
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_2.bin 18 reg
+#1619774261
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 reg
+#1619774408
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 3 mem 0x10000000
+#1619776391
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 7 mem 0x10000000
+#1619776515
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 reg
+#1619776562
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 8 reg
+#1619776589
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 7 reg
+#1619776610
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 8 reg
+#1619776663
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 9 reg
+#1619776728
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 10 reg
+#1619776779
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 12 mem 0x10000004
+#1619776988
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 11 mem 0x10000004
+#1619777072
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 13 reg
+#1619777100
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 15 reg
+#1619777119
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 17 reg
+#1619777128
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 18 reg
+#1619777164
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 18 mem 0x10000000
+#1619777292
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 14 mem 0x10000000
+#1619777381
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 15 mem 0x10000000
+#1619777386
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 16 mem 0x10000000
+#1619777901
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 17 reg
+#1619778147
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 reg
+#1619778247
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 18 mem 0x1000000000
+#1619778249
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 18 mem 0x100000000
+#1619778254
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 18 mem 0x10000000
+#1619780087
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 reg
+#1619780225
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 30 reg
+#1619780490
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 20 mem 0x10000000
+#1619780633
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 19 reg
+#1619780648
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 20 reg
+#1619780675
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 23 reg
+#1619780726
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 24 reg
+#1619780757
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 25 mem 0x10000000
+#1619780788
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 30 reg
+#1619782745
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 31 reg
+#1619782788
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 32 reg
+#1619782892
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 33 reg
+#1619782924
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_4.bin 40 reg
+#1619784299
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin mem 0x00000000
+#1619784310
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 mem 0x00000000
+#1619784446
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin 19 reg
+#1619784451
+~swe3005/2021s/proj2/mips-sim ~swe3005/2021s/proj2/proj2_3.bin mem 0x00000000
+#1622215272
+~swe3005/bin/check-submission proj2
+#1622215282
+~swe3005/bin/check-submission proj1
+#1622215300
+~swe3005/bin/check-submission proj2
+#1622215411
+ls
+#1622215414
+cd proj2
+#1622215416
+ls
+#1622215425
+cd project_2
+#1622215431
+cd ..
+#1622215514
+~swe3005/bin/submit proj3 project_3
+#1622215523
+~swe3005/bin/submit proj3 proj3
+#1622215547
+~swe3005/bin/check-submission proj3
+#1622215559
+clear
+#1622215561
+~swe3005/bin/check-submission proj3
+#1622215563
+~swe3005/bin/check-submission proj2
+#1622215782
+~swe3005/bin/check-submission proj1
+#1622216371
+clear
+#1622216375
+~swe3005/bin/check-submission proj1
+#1622216379
+clear
+#1622216381
+~swe3005/bin/check-submission proj0
+#1622216383
+clear
+#1622216385
+~swe3005/bin/check-submission proj2
+#1622216421
+~swe3005/bin/check-submission proj0
+#1622221666
+cd proj3
+#1622226447
+cd ..
+#1622226449
+ls
+#1622226500
+cd swe3005
+#1622226500
+ls
+#1622226504
+cd 2021s
+#1622226505
+ls
+#1622226509
+cd proj3
+#1622226510
+ls
+#1622226624
+cd ..
+#1622226637
+cp proj3 /home/2019312326
+#1622226651
+cd proj3
+#1622226657
+cp . /home/2019312326
+#1622226692
+cp -r proj3 /home/2019312326
+#1622226695
+cd ..
+#1622226696
+cp -r proj3 /home/2019312326
+#1622226807
+cd
+#1622226811
+cd proj3
+#1622226811
+ls
+#1622226868
+gcc -o main main.c
+#1622226869
+ls
+#1622226882
+./main 31.bin 100 reg
+#1622227264
+gcc -o main main.c
+#1622227265
+./main 31.bin 100 reg
+#1622227895
+gcc -o temp temp.c
+#1622227898
+./temp
+#1622227920
+gcc -o main main.c
+#1622227966
+./main 31.bin 100 reg
+#1622228105
+gcc -o main main.c
+#1622228107
+./main 31.bin 100 reg
+#1622229155
+gcc -o main main.c
+#1622226358
+cd ../proj1
+#1622226360
+ls
+#1622226789
+./mips-sim 31.bin
+#1622228021
+swe3005/2021s/proj2/mips-sim
+#1622228040
+~swe3005/2021s/proj3/mips-sim 31.bin 100 reg
+#1622229797
+./mips-sim 31.bin > 31.txt
+#1622229801
+./mips-sim 31.bin > 32.txt
+#1622229808
+./mips-sim 32.bin > 32.txt
+#1622229812
+./mips-sim 33.bin > 33.txt
+#1622229816
+./mips-sim 34.bin > 34.txt
+#1622229821
+./mips-sim 35.bin > 35.txt
