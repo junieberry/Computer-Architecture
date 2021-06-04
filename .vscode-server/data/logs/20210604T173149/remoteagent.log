@@ -37,3 +37,36 @@
 [2021-06-04 19:03:14.278] [remoteagent] [info] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
 [2021-06-04 19:29:18.471] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
 [2021-06-04 19:29:18.479] [remoteagent] [info] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 19:39:45.115] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-06-04 19:39:46.180] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-06-04 19:39:46.180] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[2021-06-04 19:39:46.211] [remoteagent] [info] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 19:41:50.118] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-06-04 19:43:08.274] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-06-04 19:43:08.274] [remoteagent] [info] [127.0.0.1][0275d360][ManagementConnection] New connection established.
+[2021-06-04 19:43:08.291] [remoteagent] [info] [127.0.0.1][330bfa34][ExtensionHostConnection] New connection established.
+[2021-06-04 19:43:08.301] [remoteagent] [info] [127.0.0.1][330bfa34][ExtensionHostConnection] <32058> Launched Extension Host Process.
+[2021-06-04 19:48:08.277] [remoteagent] [info] [127.0.0.1][79909b74][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[2021-06-04 19:48:09.304] [remoteagent] [info] [127.0.0.1][d89435ee][ExtensionHostConnection] <24463> Extension Host Process exited with code: 0, signal: null.
+[2021-06-04 19:53:58.765] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] New connection established.
+[2021-06-04 19:53:58.785] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] New connection established.
+[2021-06-04 19:53:58.793] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] <3683> Launched Extension Host Process.
+[2021-06-04 19:55:27.395] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 19:57:14.278] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] The client has reconnected.
+[2021-06-04 19:57:15.000] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 20:02:26.416] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] The client has reconnected.
+[2021-06-04 20:02:26.417] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 20:04:20.173] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-06-04 20:05:15.172] [remoteagent] [info] [127.0.0.1][0275d360][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-06-04 20:05:43.617] [remoteagent] [info] [127.0.0.1][0275d360][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-06-04 20:05:43.617] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-06-04 20:05:43.617] [remoteagent] [info] [127.0.0.1][0e3c8529][ManagementConnection] New connection established.
+[2021-06-04 20:05:43.659] [remoteagent] [info] [127.0.0.1][180ef4fb][ExtensionHostConnection] New connection established.
+[2021-06-04 20:05:43.664] [remoteagent] [info] [127.0.0.1][180ef4fb][ExtensionHostConnection] <8380> Launched Extension Host Process.
+[2021-06-04 20:05:44.234] [remoteagent] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[2021-06-04 20:08:32.152] [remoteagent] [info] [127.0.0.1][0e3c8529][ManagementConnection] The client has reconnected.
+[2021-06-04 20:08:37.205] [remoteagent] [info] [127.0.0.1][180ef4fb][ExtensionHostConnection] The client has reconnected.
+[2021-06-04 20:10:43.618] [remoteagent] [info] [127.0.0.1][0275d360][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[2021-06-04 20:10:43.620] [remoteagent] [info] [127.0.0.1][143e51a7][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[2021-06-04 20:10:44.651] [remoteagent] [info] [127.0.0.1][330bfa34][ExtensionHostConnection] <32058> Extension Host Process exited with code: 0, signal: null.
+[2021-06-04 20:10:44.652] [remoteagent] [info] [127.0.0.1][35e096c4][ExtensionHostConnection] <3683> Extension Host Process exited with code: 0, signal: null.

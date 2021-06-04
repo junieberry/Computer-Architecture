@@ -14,3 +14,5 @@
 [2021-06-04 18:23:07.423] [exthost] [info] eager extensions activated
 [2021-06-04 18:23:07.627] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
 [2021-06-04 18:23:07.627] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/ms-vscode.js-debug/src/extension.js
+[2021-06-04 19:48:08.276] [exthost] [info] extension host terminating: renderer disconnected for too long (2)
+[2021-06-04 19:48:09.288] [exthost] [info] exiting with code 0

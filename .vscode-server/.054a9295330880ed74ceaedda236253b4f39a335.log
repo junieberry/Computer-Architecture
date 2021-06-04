@@ -49,3 +49,54 @@ Error: Unexpected SIGPIPE
 [19:03:14] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
 [19:29:18] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
 [19:29:18] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[19:39:45] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[19:39:46] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[19:39:46] [127.0.0.1][79909b74][ManagementConnection] The client has reconnected.
+[19:39:46] [127.0.0.1][d89435ee][ExtensionHostConnection] The client has reconnected.
+[19:41:50] [127.0.0.1][79909b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[19:43:08] [127.0.0.1][79909b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[19:43:08] [127.0.0.1][0275d360][ManagementConnection] New connection established.
+[19:43:08] [127.0.0.1][330bfa34][ExtensionHostConnection] New connection established.
+[19:43:08] [127.0.0.1][330bfa34][ExtensionHostConnection] <32058> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 321010 chars and 25 size events
+[IPC Library: Pty Host]  INFO Persistent process "10": Replaying 8994 chars and 15 size events
+[19:48:08] [127.0.0.1][79909b74][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[19:48:09] [127.0.0.1][d89435ee][ExtensionHostConnection] <24463> Extension Host Process exited with code: 0, signal: null.
+[19:53:58] [127.0.0.1][143e51a7][ManagementConnection] New connection established.
+[19:53:58] [127.0.0.1][35e096c4][ExtensionHostConnection] New connection established.
+[19:53:58] [127.0.0.1][35e096c4][ExtensionHostConnection] <3683> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 323534 chars and 26 size events
+[IPC Library: Pty Host]  INFO Persistent process "10": Replaying 9926 chars and 16 size events
+[19:55:27] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[19:57:14] [127.0.0.1][143e51a7][ManagementConnection] The client has reconnected.
+[19:57:15] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[20:02:26] [127.0.0.1][143e51a7][ManagementConnection] The client has reconnected.
+[20:02:26] [127.0.0.1][35e096c4][ExtensionHostConnection] The client has reconnected.
+[20:04:20] [127.0.0.1][143e51a7][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[20:05:15] [127.0.0.1][0275d360][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/home/2019312326/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/out/bootstrap.js:1:370)
+    at process.emit (events.js:315:20)
+[20:05:43] [127.0.0.1][0275d360][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[20:05:43] [127.0.0.1][143e51a7][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[20:05:43] [127.0.0.1][0e3c8529][ManagementConnection] New connection established.
+[20:05:43] [127.0.0.1][180ef4fb][ExtensionHostConnection] New connection established.
+[20:05:43] [127.0.0.1][180ef4fb][ExtensionHostConnection] <8380> Launched Extension Host Process.
+[20:05:44] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 323534 chars and 26 size events
+[IPC Library: Pty Host]  INFO Persistent process "10": Replaying 9926 chars and 16 size events
+[20:08:32] [127.0.0.1][0e3c8529][ManagementConnection] The client has reconnected.
+[20:08:37] [127.0.0.1][180ef4fb][ExtensionHostConnection] The client has reconnected.
+[20:10:43] [127.0.0.1][0275d360][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[20:10:43] [127.0.0.1][143e51a7][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[20:10:44] [127.0.0.1][330bfa34][ExtensionHostConnection] <32058> Extension Host Process exited with code: 0, signal: null.
+[20:10:44] [127.0.0.1][35e096c4][ExtensionHostConnection] <3683> Extension Host Process exited with code: 0, signal: null.

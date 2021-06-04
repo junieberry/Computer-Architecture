@@ -65,7 +65,7 @@ int CacheLoad(int address){
     int index=(address>>6)%(1<<3);
     int block=(address)%(1<<6);
 
-    printf("%x = tag : %x, index : %x, block : %x\n",address, tag, index, block/4);
+    // printf("%x = tag : %x, index : %x, block : %x\n",address, tag, index, block/4);
 
     //Cache Hit
     for(int i=0;i<2;i++){
@@ -77,20 +77,64 @@ int CacheLoad(int address){
     }
 
     //Cache Miss
+    MISS++;
     int LRU=Cache[index].LRU;
-    //Cache load
+    
+    //Dirty Bit
+    if(Cache[index].set[LRU].D==1){
+        for (int i=0; i<16; i++){
+            Data[(((address/4)>>4)<<4)+i]=Cache[index].set[LRU].Data[i];
+        }
+    }
+
     Cache[index].set[LRU].Tag=tag;
     for (int i=0; i<16; i++){
-        Cache[index].set[LRU].Data[i]=Data[(address/4)/16+i];
+        Cache[index].set[LRU].Data[i]=Data[(((address/4)>>4)<<4)+i];
     }
-    
-    MISS++;
-    
     Cache[index].set[LRU].V=1;
     Cache[index].LRU=1-LRU;
     
     return Cache[index].set[LRU].Data[block/4];
+}
+
+int CacheStore(int address, int fix){
+    int tag=address>>9;
+    int index=(address>>6)%(1<<3);
+    int block=(address)%(1<<6);
+
+    // printf("%x = tag : %x, index : %x, block : %x\n",address, tag, index, block/4);
     
+    //Cache Hit
+    for(int i=0;i<2;i++){
+        if ((Cache[index].set[i].Tag==tag)&(Cache[index].set[i].V==1)){
+            HIT++;
+            Cache[index].LRU=1-i;
+            Cache[index].set[i].D=1;
+            Cache[index].set[i].Data[block/4]=fix;
+            return 0;
+        }
+    }
+
+    //Cache Miss
+    MISS++;
+    int LRU=Cache[index].LRU;
+    if(Cache[index].set[LRU].D==1){
+        for (int i=0; i<16; i++){
+            Data[(((address/4)>>4)<<4)+i]=Cache[index].set[LRU].Data[i];
+        }
+    }
+
+    //Data fix and store
+    Data[address/4]=fix;
+    Cache[index].set[LRU].Tag=tag;
+    for (int i=0; i<16; i++){
+        Cache[index].set[LRU].Data[i]=Data[(((address/4)>>4)<<4)+i];
+    }
+    Cache[index].set[LRU].V=1;
+    Cache[index].set[LRU].D=1;
+
+    Cache[index].LRU=1-LRU;
+    return 0;
 }
 
 int Rinst(char* inst){
@@ -266,19 +310,18 @@ int Iinst(char* inst){
         // printf(" ori $%d, $%d, %d\n",rt,rs,immediate);
 
     }
-    else if (!strncmp(inst,"101000",6)){
-        int address=immediate+(Reg[rs]-0x10000000);
-        Word word;
-        word.inst_num=Data[address/4];
-        word.inst_arr[3-(address%4)]=Reg[rt];
-        Data[(immediate+(Reg[rs]-0x10000000))/4]=word.inst_num;
-        // printf(" sb $%d, %d($%d)\n",rt,immediate,rs);
-
-    }
+    
     else if (!strncmp(inst,"001010",6)){
         Reg[rt]=(Reg[rs]<immediate)?1:0;
         // printf(" slti $%d, $%d, %d\n",rt,rs,immediate);
 
+    }
+
+    
+    else if (!strncmp(inst,"101011",6)){
+        CacheStore(immediate+(Reg[rs]-0x10000000),Reg[rt]);
+        // Data[(immediate+(Reg[rs]-0x10000000)))/4]=Reg[rt];
+        // printf(" sw $%d, %d($%d)\n",rt,immediate,rs);
     }
     else if (!strncmp(inst,"101001",6)){
         int address=(immediate+(Reg[rs]-0x10000000));
@@ -288,16 +331,21 @@ int Iinst(char* inst){
         word2.inst_num=(unsigned short)Reg[rt];
         word1.inst_arr[3-(address%4)/2]=word2.inst_arr[2];
         word1.inst_arr[3-((address%4)/2)-1]=word2.inst_arr[3];
-        
-        Data[(immediate+(Reg[rs]-0x10000000))/4]=word1.inst_num;
+
+        CacheStore(immediate+(Reg[rs]-0x10000000),word1.inst_num);
+        // Data[(immediate+(Reg[rs]-0x10000000))/4]=word1.inst_num;
 
         // printf(" sh $%d, %d($%d)\n",rt,immediate,rs);
-
     }
-    else if (!strncmp(inst,"101011",6)){
-        Data[(immediate+(Reg[rs]-0x10000000))/4]=Reg[rt];
-        // printf(" sw $%d, %d($%d)\n",rt,immediate,rs);
+    else if (!strncmp(inst,"101000",6)){
+        int address=immediate+(Reg[rs]-0x10000000);
+        Word word;
+        word.inst_num=Data[address/4];
+        word.inst_arr[3-(address%4)]=Reg[rt];
 
+        CacheStore(immediate+(Reg[rs]-0x10000000),word.inst_num);
+        // Data[(immediate+(Reg[rs]-0x10000000))/4]=word.inst_num;
+        // printf(" sb $%d, %d($%d)\n",rt,immediate,rs);
     }
     else {
         return 1;
